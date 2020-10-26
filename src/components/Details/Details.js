@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Details/details.css';
+import './details.css';
 
 const Details = () => (
     <main className="details">
