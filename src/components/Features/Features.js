@@ -7,17 +7,15 @@ const rocketImages = {
 	'Falcon 9': 'falcon-9',
 	'Falcon Heavy': 'falcon-heavy',
   	'Starship': 'starship',
-}
+};
 
-const Features = ({name, height, diameter, mass, payload_weights: payloadWeights, description}) => {
-	
-	return (
-    <section className="features">
+const Features = ({name, height, diameter, mass, payload_weights: payloadWeights, description}) => (
+
+	<section className="features">
 		<h2 className="features-title">
 			{name} <br/>Overview
 		</h2>
 		<div className="overview">
-
 			<table className="table">
 				<caption className="table-title">
 					Size
@@ -61,6 +59,6 @@ const Features = ({name, height, diameter, mass, payload_weights: payloadWeights
 			</article>
 		</div>
 	</section>
-)};
+);
 
 export default Features;
