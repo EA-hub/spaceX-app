@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useHistory } from 'react-router-dom';
 import useLaunches from '../useLaunches/useLaunches';
+import Youtube from 'react-youtube';
 import './details.css';
 import Main from '../Main/Main'
 
@@ -20,7 +21,7 @@ const Details = (props) => {
 
 	return (
 		<>
-		<Main/>
+		<Main name={launch.name}/>
 		<main className="details">
 			<div className="container">
 				<div className="details-row">
@@ -31,7 +32,8 @@ const Details = (props) => {
 						<p className="details-description">{launch.details}</p>
 					</div>
 				</div>
-				<div>
+				<div className='details-youtube'>
+					<Youtube  videoId={launch.links.youtube_id} />
 				</div>
 			</div>
 			<a onClick={history.goBack} className="button button-back">go back</a>

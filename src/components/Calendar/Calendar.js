@@ -12,7 +12,7 @@ const Calendar = () => {
 
 	return (
 		<>
-			<Main/>
+			<Main name='Календарь SpaceX'/>
     		<section className="calendar">
 				<div className="container">
 					<ul className="calendar-list">

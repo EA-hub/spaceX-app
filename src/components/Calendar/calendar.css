@@ -15,7 +15,6 @@
 }
 
 .launches {
-
 	width: 360px;
 	height: 100%;
 	border: 1px white solid;
@@ -37,12 +36,12 @@
 }
 
 .launches-content {
+	text-align: center;
 	overflow: hidden;
 }
 
 
 .launches-image img {
-
 	object-fit: cover;
 	display: block;
 	margin: 0 auto;
